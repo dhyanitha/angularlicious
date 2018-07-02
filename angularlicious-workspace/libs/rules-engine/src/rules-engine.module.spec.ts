@@ -1,7 +1,7 @@
-import { RulesEngineModule } from './rules-engine.module';
+import { AngularliciousRulesEngineModule } from './rules-engine.module';
 
 describe('RulesEngineModule', () => {
   it('should work', () => {
-    expect(new RulesEngineModule()).toBeDefined();
+    expect(new AngularliciousRulesEngineModule()).toBeDefined();
   });
 });
