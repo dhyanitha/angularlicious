@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BuildMotionRulesEngineModule } from '@angularlicious/rules-engine';
+import { AngularliciousRulesEngineModule } from '@angularlicious/rules-engine';
 
 @NgModule({
-  imports: [BuildMotionRulesEngineModule, CommonModule]
+  imports: [AngularliciousRulesEngineModule, CommonModule]
 })
 export class ActionsModule {}
