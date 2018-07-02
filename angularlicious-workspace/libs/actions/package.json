@@ -1,0 +1,37 @@
+{
+  "$schema": "./../../node_modules/ng-packagr/package.schema.json",
+  "name": "@angularlicious/actions",
+  "version": "5.0.1",
+  "description": "Angular-Actions is a framework to build amazing business logic. It is built using Typescript and compliments the Angular-Rules-Engine.",
+  "license": "MIT",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "./index.ts",
+      "umdModuleIds": {
+        "@angularlicious/rules-engine": "buildmotionRulesEngine"
+      }
+    },
+    "dest": "./../../dist/@angularlicious/actions"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "business logic",
+    "business actions",
+    "business rules",
+    "angularlicious",
+    "validation",
+    "javascript rules",
+    "Matt Vaughn",
+    "Angularlicious.com",
+    "Angularlicious"
+  ],
+  "author": "Matt Vaughn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angularlicious/angularlicious.git"
+  },
+  "peerDependencies": {
+    "@angularlicious/rules-engine": "^2.0.4"
+  }
+}

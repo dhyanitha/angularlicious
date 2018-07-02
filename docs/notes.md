@@ -11,3 +11,5 @@ Create some libs for the workspace.
 ```
 ng generate lib <library name here>
 ```
+
+npm install -D ng-packagr@latest
