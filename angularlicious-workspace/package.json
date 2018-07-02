@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "package:libs": "npm run package:rules-engine && npm run package:actions",
     "package:actions": "ng-packagr -p libs/actions/package.json && npm run copy:actions",
     "package:rules-engine": "ng-packagr -p libs/rules-engine/package.json && npm run copy:rules-engine",
     "copy:actions": "sync-glob 'dist/@angularlicious/actions/' node_modules/@angularlicious/actions",
