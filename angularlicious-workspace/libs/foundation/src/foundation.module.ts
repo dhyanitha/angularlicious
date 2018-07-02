@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AngularliciousLoggingModule } from '@angularlicious/logging';
 
 @NgModule({
-  imports: [CommonModule]
+  imports: [AngularliciousLoggingModule, CommonModule]
 })
-export class FoundationModule {}
+export class AngularliciousFoundationModule {}

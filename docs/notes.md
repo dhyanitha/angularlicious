@@ -1,3 +1,9 @@
+# Upgrade to Angular 6
+
+```
+npm install @angular/cli@latest -g
+```
+
 # Lib Workspace Setup
 We will create a workspace using nrwl.io Nx extensions with the primary goal of publishing multiple libraries. If you are using the Angular or the NRWL.io Nx workspace, you will see pretty fast that it allows for library and application (web apps) to be in the same work environment - now conveniently called a ` workspace `. I think developer productivity and workflow are the main advantages for using a workspace. 
 

@@ -1,0 +1,23 @@
+<angularlicious-alert [alertNotification]="alertNotification" [hasMessage]="alertNotification.showAlert"></angularlicious-alert>
+<!-- SUBSCRIBE SIGN-UP FORM -->
+<form [formGroup]="_form" (ngSubmit)="submitForm()">
+  <!-- SUBSCRIBER NAME -->
+  <div class="input-group form-group-no-border">
+    <span class="input-group-addon">
+      <i class="now-ui-icons users_circle-08"></i>
+    </span>
+    <input type="text" formControlName="subscriberName" class="form-control" placeholder="Name...">
+  </div>
+  <!-- SUBSCRIBER EMAIL -->
+  <div class="input-group form-group-no-border">
+    <span class="input-group-addon">
+      <i class="now-ui-icons ui-1_email-85"></i>
+    </span>
+    <input type="text" formControlName="emailAddress" class="form-control" placeholder="Email...">
+  </div>
+  <!-- SUBSCRIBE BUTTON -->
+  <button class="btn btn-neutral btn-round btn-lg">Subscribe
+    <i class="fa fa-check ml-1"></i>
+  </button>
+</form>
+<!-- SUBSCRIBE SIGN-UP FORM -->

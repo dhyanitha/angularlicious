@@ -1,7 +1,7 @@
-import { SecurityModule } from './security.module';
+import { AngularliciousSecurityModule } from './security.module';
 
 describe('SecurityModule', () => {
   it('should work', () => {
-    expect(new SecurityModule()).toBeDefined();
+    expect(new AngularliciousSecurityModule()).toBeDefined();
   });
 });

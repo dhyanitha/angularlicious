@@ -1,1 +1,2 @@
-export { CoreModule } from './src/core.module';
+export { AngularliciousCoreModule } from './src/build-motion-core.module';
+export { AlertComponent } from './src/components/alert/alert.component';
