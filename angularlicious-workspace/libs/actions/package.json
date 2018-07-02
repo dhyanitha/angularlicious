@@ -2,7 +2,7 @@
   "$schema": "./../../node_modules/ng-packagr/package.schema.json",
   "name": "@angularlicious/actions",
   "version": "6.0.0",
-  "description": "@angularlicious/actions is a framework to build amazing business logic. It is built using Typescript and compliments the @angularlicious/rules-engine.",
+  "description": "@angularlicious/actions is a framework to build amazing business logic. It compliments the @angularlicious/rules-engine.",
   "license": "MIT",
   "ngPackage": {
     "lib": {
