@@ -1,0 +1,51 @@
+{
+  "name": "@angularlicious/core",
+  "version": "5.0.1",
+  "description": "An Angular custom module that contains core application items for Angularlicious Angular applications. It relies on the angularlicious-foundation package.",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "./index.ts",
+      "umdModuleIds": {
+        "@angularlicious/rules-engine": "angularRulesEngine",
+        "@angularlicious/logging": "angularliciousLogging",
+        "@angularlicious/foundation": "angularliciousFoundation"
+      }
+    },
+    "dest": "./../../dist/@angularlicious/core"
+  },
+  "keywords": [
+    "Angular",
+    "security",
+    "Build Motion",
+    "Matt Vaughn",
+    "Angularlicious",
+    "angularlicious",
+    "#Angularlicious",
+    "OAuth",
+    "login"
+  ],
+  "author": "Matt Vaughn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angularlicious/angularlicious.git"
+  },
+  "peerDependencies": {
+    "@angular/http": "^5.1.3",
+    "@angular/router": "^5.1.3",
+    "@types/google.analytics": "0.0.36",
+    "angular-actions": "^2.0.0",
+    "angular-rules-engine": "^2.2.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.5.2",
+    "@angular/common": "^5.1.3",
+    "@angular/compiler": "^5.1.3",
+    "@angular/compiler-cli": "^5.1.3",
+    "@angular/core": "^5.1.3",
+    "rollup": "^0.50.0",
+    "typescript": "^2.4.2",
+    "typescript-dotnet-commonjs": "^3.2.4",
+    "uglify-js": "^3.1.10"
+  }
+}

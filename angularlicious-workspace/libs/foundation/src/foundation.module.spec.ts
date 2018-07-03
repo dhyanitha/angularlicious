@@ -1,7 +1,7 @@
-import { FoundationModule } from './foundation.module';
+import { AngularliciousFoundationModule } from './foundation.module';
 
 describe('FoundationModule', () => {
   it('should work', () => {
-    expect(new FoundationModule()).toBeDefined();
+    expect(new AngularliciousFoundationModule()).toBeDefined();
   });
 });

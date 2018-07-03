@@ -2,7 +2,7 @@
 Angular-Actions is a framework to build amazing business logic. It is built using Typescript and compliments the [Angular-Rules-Engine](https://www.npmjs.com/package/angular-rules-engine) on [npmjs.com](https://www.npmjs.com/package/angular-rules-engine.
 ) or [GitHub](https://github.com/angularlicious/angular-rules-engine).
 
-        Note: v2.0.x requires Angular 5.x packages.
+        Note: v6.0.x requires Angular 6.x packages.
 
 ## Another Framework - Really??
 The word ` framework ` is not bad. We all need structure in our lives. There is structure all around us in everything we do. Knowing what to expect or how to interact with things in real life is nothing new to us, we do it everyday without even thinking about it, right? Sometimes, we need a little coaxing and training. You all know the sandwich shop where you start by indicating the type of sandwich, the bread, toasted or not toasted, cheese, toppings, etc. compared to ordering a ` Big Mac ` at McDonald's. McDonald's doesn't ask you if you want your bun toasted or what kind of cheese you want - I guess you can say they are opinionated in how the build a sandwich. Of course, you can ask for ` no pickles ` and hope it comes out that way.
