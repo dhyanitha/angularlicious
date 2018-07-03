@@ -1,7 +1,7 @@
 {
   "name": "@angularlicious/rules-engine",
   "version": "5.0.1",
-  "description": "A serious rule engine developed using Typescript. Perfect for Angular applications. Build something amazing!",
+  "description": "A serious rule engine for Javascript applications. Perfect for Angular applications. Build something amazing!",
   "license": "MIT",
   "ngPackage": {
     "lib": {
@@ -21,9 +21,10 @@
     "rules engine",
     "business rules",
     "angularlicious",
+    "@angularlicious",
     "Matt Vaughn",
     "Angularlicious.com",
-    "Angularlicious"
+    "Angularlicio.us"
   ],
   "author": "Matt Vaughn",
   "repository": {
@@ -32,11 +33,5 @@
   },
   "peerDependencies": {
     "typescript-dotnet-commonjs": "~4.10.0"
-  },
-  "scripts": {
-    "semantic-release": "semantic-release"
-  },
-  "devDependencies": {
-    "semantic-release": "^15.5.1"
   }
 }
