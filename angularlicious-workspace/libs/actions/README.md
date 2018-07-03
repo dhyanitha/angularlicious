@@ -108,10 +108,10 @@ There are many concerns for an application beyond just the business logic. Many 
 
 The framework implements a [` Template Method Design Pattern `](http://www.dofactory.com/net/template-method-design-pattern) - which when combined with the [` Angular-Rules-Engine `](https://www.npmjs.com/package/angular-rules-engine) provides a productive and intuitive development environment to create complex business logic.
 
-*NOTE*: The ` angular-actions ` framework is a port from the ` Angularlicious Framework ` - which is 
+*NOTE*: The ` @angularlicious/actions ` framework is a port from the ` BuildMotion Framework ` - which is 
 a Microsoft .NET framework for building .NET Web APIs and Domain Services with a rich business 
 logic layer. It uses ` actions ` and a ` rule engine ` to build extensible and maintainable 
-business logic and rules. Available on Nuget at: [https://www.nuget.org/packages/Angularlicious/](https://www.nuget.org/packages/Angularlicious/) with thousands of downloads combined ([Vergosity](https://www.nuget.org/packages/Vergosity.Framework/)/Angularlicious).
+business logic and rules. Available on Nuget at: [https://www.nuget.org/packages/BuildMotion/](https://www.nuget.org/packages/BuildMotion/) with thousands of downloads combined ([Vergosity](https://www.nuget.org/packages/BuildMotion.Framework/)/BuildMotion).
 
 NPM: [https://www.npmjs.com/package/angular-actions](https://www.npmjs.com/package/angular-actions)
 
@@ -513,5 +513,5 @@ getTimeSpan(startDate: DateTime, endDate: DateTime): TimeSpan {
 
 ## Performant
 
-&copy; 2016-2017 Build Motion, LLC [www.angularlicious.com](http://www.angularlicious.com)
+&copy; 2016-2018 Build Motion, LLC [www.angularlicious.com](http://www.angularlicious.com)
 [Matt Vaughn on LinkedIn](https://www.linkedin.com/in/matt-vaughn-857a982?trk=profile-badge)
