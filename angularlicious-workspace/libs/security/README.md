@@ -1,4 +1,4 @@
-# @angularlicious/core
+# @angularlicious/security
 
 Updated to use Angular version 6.
 
