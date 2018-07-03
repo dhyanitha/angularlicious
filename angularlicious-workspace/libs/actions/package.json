@@ -31,6 +31,6 @@
     "url": "git+https://github.com/angularlicious/angularlicious.git"
   },
   "peerDependencies": {
-    "@angularlicious/rules-engine": "^2.0.4"
+    "@angularlicious/rules-engine": "^6.0.0"
   }
 }
