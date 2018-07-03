@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/observeOn';
@@ -34,7 +34,7 @@ export class SecurityApiService extends HttpBaseService {
       requestUrl,
       body
     );
-    return this.httpService.executeRequest(options);
+    return this.httpService.get(options);
 
     /**TEMPORARY IMPLEMENTATION */
     // const response = new ServiceResponse();

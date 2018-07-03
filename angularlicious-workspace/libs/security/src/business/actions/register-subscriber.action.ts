@@ -15,6 +15,7 @@ import { Severity } from '@angularlicious/logging';
 
 import { Subscriber } from './../../models/subscriber.model';
 import { SecurityActionBase } from './security-action-base.action';
+import { HttpResponse } from '@angular/common/http';
 
 export class RegisterSubscriberAction extends SecurityActionBase {
   // response: Observable<Response>;
@@ -69,8 +70,6 @@ export class RegisterSubscriberAction extends SecurityActionBase {
       Severity.Information,
       `Running the [performAction] for the ${this.actionName}.`
     );
-    this.response = this.businessProvider.securityApiService.registerSubscriber(
-      this.subscriber
-    );
+    this.response = this.businessProvider.securityApiService.registerSubscriber(this.subscriber);
   }
 }

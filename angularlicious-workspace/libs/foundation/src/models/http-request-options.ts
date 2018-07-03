@@ -9,7 +9,7 @@ export class HttpRequestOptions {
     observe?: 'body'; 
     params?: HttpParams | { [param: string]: string | string[]; }; 
     reportProgress?: boolean; 
-    responseType: 'arraybuffer'; 
+    // responseType: 'arraybuffer'; 
     withCredentials?: boolean;
     requestUrl: string;
 }

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { HttpResponse } from '@angular/common/http';
 
 import { ServiceBase, ServiceResponse } from '@angularlicious/foundation';
 import {

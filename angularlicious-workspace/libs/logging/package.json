@@ -1,6 +1,6 @@
 {
     "name": "@angularlicious/logging",
-    "version": "5.0.1",
+    "version": "6.0.0",
     "ngPackage": {
         "lib": {
             "entryFile": "./index.ts"
@@ -13,15 +13,17 @@
     },
     "keywords": [
         "angularlicious",
+        "@angularlicious",
         "Angular",
         "Angularlicious",
         "Angularlicio.us",
-        "Matt Vaughn"
+        "Matt Vaughn",
+        "logging"
     ],
-    "author": "matt.vaughn@angularlicious.com www.angularlicious.com",
+    "author": "matt@angularlicious.com www.angularlicio.us",
     "license": "MIT",
     "peerDependencies": {
-        "@angular/common": "^5.1.3",
-        "@angular/core": "^5.1.3"
+        "@angular/common": "^6.0.7",
+        "@angular/core": "^6.0.7"
     }
 }

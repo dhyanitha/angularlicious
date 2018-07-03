@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpEvent, HttpHeaders, HttpParams, HttpResponse } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
@@ -12,6 +12,8 @@ import { Severity } from '@angularlicious/logging';
 import { AngularliciousLoggingService } from '@angularlicious/logging';
 import { ErrorResponse } from './models/error-response.model';
 import { ServiceError } from './models/service-error.model';
+import { ServiceResponse } from '@angularlicious/foundation/src/models/service-response.model';
+import { RequestMethod } from '@angular/http';
 
 /**
  * Use to create and execute HTTP service requests.
@@ -27,7 +29,7 @@ export class HttpBaseService {
   constructor(
     public http: HttpClient,
     public loggingService: AngularliciousLoggingService
-  ) {}
+  ) { }
 
   /**
    * Use to create a [Header] for [multipart/form-data].
@@ -97,24 +99,23 @@ export class HttpBaseService {
       `Preparing to create request options for the HTTP request.`
     );
     const options = new HttpRequestOptions();
-      options.headers =  headers;
-      options.requestUrl = url;
-      options.body = body;
-    
+    options.headers = headers;
+    options.requestUrl = url;
+    options.body = body;
+
     return options;
   }
 
   /**
    * Use to execute an HTTP request using the specified header and URL.
-   * See Request: https://angular.io/docs/ts/latest/api/http/index/Request-class.html
    */
-  executeRequest(requestOptions: HttpRequestOptions) {
+  executeRequest(requestOptions: HttpRequestOptions): Observable<ServiceResponse> {
     this.loggingService.log(
       this.serviceName,
       Severity.Information,
       `Preparing to execute HTTP request. Url: ${requestOptions.requestUrl}`);
 
-      return this.http.request(requestOptions.requestMethod.toString(), requestOptions.requestUrl)
+    return this.http.request<ServiceResponse>(requestOptions.requestMethod.toString(), requestOptions.requestUrl, requestOptions);
     // return this.http
     //   .request(new Request(requestOptions))
     //   .map(response => response.json()) // maps the observable response to a JSON object;
@@ -124,8 +125,24 @@ export class HttpBaseService {
   /**
    * Use to execute an HTTP [get] request using the specified url and options.
    */
-  get(requestOptions: HttpRequestOptions) {
-    // this.http.get
+  get<ServiceResponse>(requestOptions: HttpRequestOptions): Observable<ServiceResponse> {
+    requestOptions.requestMethod = HttpRequestMethod.GET;
+    const response = this.http.get<ServiceResponse>(requestOptions.requestUrl, requestOptions)
+    .pipe();
+
+    return response;
+  }
+
+  /**
+   * Use to execute an HTTP [post] request using the specified url and options.
+   * @param requestOptions use to define the options for the specified request.
+   */
+  post<ServiceResponse>(requestOptions: HttpRequestOptions): Observable<ServiceResponse> {
+    requestOptions.requestMethod = HttpRequestMethod.POST;
+    const response = this.http.post<ServiceResponse>(requestOptions.requestUrl, requestOptions)
+    .pipe();
+
+    return response;
   }
 
   /**
@@ -137,7 +154,7 @@ export class HttpBaseService {
   ): Observable<Response> {
     const message = `${error.toString()} ${
       requestOptions.requestUrl
-    }, ${JSON.stringify(requestOptions.body)}`;
+      }, ${JSON.stringify(requestOptions.body)}`;
     this.loggingService.log(this.serviceName, Severity.Error, message);
     if (error && error._body) {
       /**

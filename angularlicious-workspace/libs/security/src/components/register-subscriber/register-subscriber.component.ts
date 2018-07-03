@@ -59,13 +59,13 @@ export class RegisterSubscriberComponent extends ComponentBase
     this.securityService
       .registerSubscriber(subscriber)
       .subscribe(
-        response => this.handleSubscribeUser(response),
+        (response: ServiceResponse) => this.handleSubscribeUser(response),
         error => this.handleServiceErrors(error, this.securityService.serviceContext),
         () => this.finishRequest(this.componentName)
       );
   }
 
-  handleSubscribeUser(response: ServiceResponse | ErrorResponse) {
+  handleSubscribeUser(response: ServiceResponse) {
     const functionName = 'handleSubscribeUser';
     const logMessage = `[${functionName}]: Preparing to handle the response from the [SecurityService] in the ${
       this.componentName
@@ -82,7 +82,8 @@ export class RegisterSubscriberComponent extends ComponentBase
         this.subscribe.emit(response as ServiceResponse);
       } else {
         this.handleServiceErrors(
-          response as ErrorResponse,
+          // response as ErrorResponse,
+          null,
           this.securityService.serviceContext
         );
       }

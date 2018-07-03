@@ -43,6 +43,12 @@ export class AngularliciousLoggingService {
     this.timestamp = new Date();
 
     const msg = `${this.message}`;
+
+    // todo: add switch based on the severity to:
+    // console.info
+    // console.warn
+    // console.error
+    // console.log
     console.log(
       `${this.severity} from ${this.source}: ${msg} (${this.timestamp})`
     );
