@@ -12,7 +12,7 @@ import { Severity } from '@angularlicious/logging';
 import { AngularliciousLoggingService } from '@angularlicious/logging';
 import { ErrorResponse } from './models/error-response.model';
 import { ServiceError } from './models/service-error.model';
-import { ServiceResponse } from '@angularlicious/foundation/src/models/service-response.model';
+import { ServiceResponse } from './models/service-response.model';
 import { RequestMethod } from '@angular/http';
 
 /**

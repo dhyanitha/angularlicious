@@ -4,6 +4,13 @@
 npm install @angular/cli@latest -g
 ```
 
+# Upgrade Nrwl.io
+
+```
+ng update @nrwl/schematics
+npm run update
+```
+
 # Lib Workspace Setup
 We will create a workspace using nrwl.io Nx extensions with the primary goal of publishing multiple libraries. If you are using the Angular or the NRWL.io Nx workspace, you will see pretty fast that it allows for library and application (web apps) to be in the same work environment - now conveniently called a ` workspace `. I think developer productivity and workflow are the main advantages for using a workspace. 
 
@@ -32,7 +39,7 @@ ng generate lib <library name here>
 
 # Create Some Packages (err... I mean libs)
 I'm still not sure why the change happened in the Angular community to start calling these things ` libs `. 
-I'm pretty sure the transition was around December 2017 and early 2018. Regardless, we need to create some packages that are publishable to NPM. From this point forward, I will use the term "lib" to mean a library or pacakge that can be consumed by an application. It may or may not contain a ES6 module or Angular module (@NgModule). 
+I'm pretty sure the transition was around December 2017 and early 2018. Regardless, we need to create some packages that are publishable to NPM. From this point forward, I will use the term "lib" to mean a library or package that can be consumed by an application. It may or may not contain a ES6 module or Angular module (@NgModule). 
 
 ```
 npm install -D ng-packagr@latest
@@ -60,3 +67,7 @@ During the build process, any references to external dependencies will be resolv
 
 ### Library Dependencies
 If you are creating 
+
+# Resources
+
+* [Announcing Nrwl Nx 6.0](https://blog.nrwl.io/announcing-nrwl-nx-6-0-29b963d87d8e)
