@@ -1,7 +1,14 @@
-# AngularliciousWorkspace
+# Angularlicious Workspace
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx). The workspace includes all of the ` @angularlicious ` libraries and source code. The libraries provide:
+* cross-cutting concerns (i.e., logging)
+* foundational classes for Angular applications (i.e., Components, Services)
+* the [@angularlicious/actions](https://www.npmjs.com/package/@angularlicious/actions) framework for implementing business logic
+* the [@angularlicious/rules-engine](https://www.npmjs.com/package/@angularlicious/rules-engine) framework for implementing business rules and data validation
 
+You can view all of the nmp packages at [https://www.npmjs.com/org/angularlicious](https://www.npmjs.com/org/angularlicious).
+
+# Tools and Information
 ## Nrwl Extensions for Angular (Nx)
 
 <a href="https://nrwl.io/nx"><img src="https://preview.ibb.co/mW6sdw/nx_logo.png"></a>
