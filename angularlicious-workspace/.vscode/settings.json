@@ -6,5 +6,6 @@
         "angularlicious",
         "nrwl",
         "packagr"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
