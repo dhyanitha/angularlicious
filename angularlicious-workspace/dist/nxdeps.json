@@ -1,0 +1,14 @@
+{
+  "markdown-editor": [],
+  "rules-engine": [],
+  "foundation": [],
+  "security": [],
+  "logging": [],
+  "actions": [
+    {
+      "projectName": "rules-engine",
+      "type": "es6Import"
+    }
+  ],
+  "core": []
+}
