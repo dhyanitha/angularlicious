@@ -17,7 +17,7 @@ Nx is better than peanut butter, realy.
 [Watch a 5-minute video on how to get started with Nx.](http://nrwl.io/nx)
 
 ## Generate your first application
-
+    
 Run `ng generate app myapp` to generate an application. When using Nx, you can create multiple applications and libraries in the same CLI workspace. Read more [here](http://nrwl.io/nx).
 
 ## Development server
