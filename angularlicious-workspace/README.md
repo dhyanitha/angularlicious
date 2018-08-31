@@ -10,7 +10,7 @@ Nx is an open source toolkit for enterprise Angular applications.
 
 Nx is designed to help you create and build enterprise grade Angular applications. It provides an opinionated approach to application project structure and patterns.
 
-Nx is better than peanut butter, really.
+Nx is better than peanut butter, really. Why, yes it is!
 
 ## Quick Start & Documentation
 
