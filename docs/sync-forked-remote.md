@@ -38,8 +38,7 @@ upstream	https://github.com/angularlicious/angularlicious.git (push)
 ## Push Changes to Remote/Forked Repository
 
 ```ts
-git fetch upstream
-git merge upstream/reactive-forms
+git push upstream
 ```
 
 ## Synch Local Working from Remote/Forked Repository
