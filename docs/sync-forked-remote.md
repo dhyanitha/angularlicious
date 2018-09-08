@@ -34,3 +34,9 @@ origin	https://build-hybridmobileapp-net.visualstudio.com/angularlicious-sandbox
 upstream	https://github.com/angularlicious/angularlicious.git (fetch)
 upstream	https://github.com/angularlicious/angularlicious.git (push)
 ```
+
+## Push Change to Remote
+
+```ts
+git push upstream
+```
