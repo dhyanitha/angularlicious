@@ -21,6 +21,13 @@ export class EventSourceComponent implements OnInit {
     this.isClicked = true;
 
     console.log(`Preparing to emit the value from the child component.`);
+    /**
+     * The example emits a simple [boolean] value, however, the emitted value
+     * can be of any type simple or complex. 
+     * 
+     * Make sure that the emitted value is strongly typed to allow the parent/container 
+     * component to handle a well-known response. 
+     */
     this.onEventSourceComponentClick.emit(this.isClicked);
   }
 }
