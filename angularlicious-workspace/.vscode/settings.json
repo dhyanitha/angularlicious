@@ -8,4 +8,9 @@
         "packagr",
         "presentational"
     ]
+=======
+        "packagr"
+    ],
+    "git.ignoreLimitWarning": true
+>>>>>>> 2f2b374964e064c49d5bb83ea68182e176fc08b8
 }
